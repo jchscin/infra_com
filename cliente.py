@@ -15,7 +15,6 @@ class Cliente:
     def comunica (self, msg):
         self.s.send(msg)
         self.msg_r = self.s.recv(100)
-#       print(msg_r)
 
     def chegada (self):
         self.comunica("oi, estou chegando...")
